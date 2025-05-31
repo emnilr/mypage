@@ -1,0 +1,22 @@
+HTML TAGS:
+<!DOCTYPE html>
+<html>
+<head>
+<meta>
+<link>
+<script>
+<title>
+<body>
+<nav>
+<a>
+
+CSS PROPERTIES:
+background-image
+box-shadow
+cursor
+font-weight
+overflow
+
+
+(one-sentence) description of how you chose to use JavaScript and Bootstrap.
+Dragging windows around
