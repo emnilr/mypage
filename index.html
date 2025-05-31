@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <title>s8mil's webpage</title>
+  <link rel="icon" type="image/png" href="images/fiveman.png">
+
+</head>
+<body class = "home">
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">s8mil's awesome webpage</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="#" onclick="navigate('music/music.html')">Music</a>
+        <a class="nav-link" href="#" onclick="navigate('games/games.html')">Games</a>
+        <a class="nav-link" href="#" onclick="navigate('about/about.html')">About Me</a>
+      </div>
+    </div>
+  </nav>
+
+<div class="win7-window card text-center"
+     style="width: 700px; top: 80px; left: 600px; transform: none;">
+  <div class="win7-titlebar card-header d-flex justify-content-between align-items-center">
+    <span class="win7-title">Welcome!</span>
+  </div>
+  <div class="win7-content card-body">
+    <h1 class="card-title">Welcome!</h1>
+    <p class="card-text">My name is Emil, aka "s8mil", and this webpage was made for CS50's Week 8 assignment.</p>
+    <p class="card-text">This page contains 3 different sections that cover some of my interests:</p>
+    <p class="card-text"><img src ="images/a.gif" alt="a" style="max-width: 50%;"></p>
+    <div class="d-flex justify-content-center gap-2">
+      <a href="#" class="btn btn-primary" onclick="navigate('music/music.html')">Music</a>
+      <a href="#" class="btn btn-primary" onclick="navigate('games/games.html')">Games</a>
+      <a href="#" class="btn btn-primary" onclick="navigate('about/about.html')">About Me</a>
+    </div>
+  </div>
+</div>
+
+<div class="win7-window card text-center"
+     style="top: 100px; left: 50px; width: 300px; transform: none;">
+  <div class="win7-titlebar card-header d-flex justify-content-between align-items-center">
+    <span class="win7-title">‎</span>
+  </div>
+  <div class="win7-content card-body">
+    <img src="images/banana-3d.gif" alt="Banana GIF" style="max-width: 100%;">
+  </div>
+</div>
+
+<div class="win7-window card text-center"
+     style="top: 500px; left: 1600px; width: 300px; transform: none;">
+  <div class="win7-titlebar card-header d-flex justify-content-between align-items-center">
+    <span class="win7-title">‎</span>
+  </div>
+  <div class="win7-content card-body">
+    <img src="images/GoGom3hWEAAckbC.jpg" alt="teto" style="max-width: 100%;">
+  </div>
+</div>
+
+<div class="win7-window card text-center"
+     style="top: 60px; left: 1600px; width: 300px; transform: none;">
+  <div class="win7-titlebar card-header d-flex justify-content-between align-items-center">
+    <span class="win7-title">‎</span>
+  </div>
+  <div class="win7-content card-body">
+    <img src="images/2GuDT6kw_400x400.jpg" alt="osaka" style="max-width: 100%;">
+  </div>
+</div>
+
+<div class="win7-window card text-center"
+     style="top: 640px; left: 450px; width: 220px; transform: none;">
+  <div class="win7-titlebar card-header d-flex justify-content-between align-items-center">
+    <span class="win7-title">‎</span>
+  </div>
+  <div class="win7-content card-body">
+    <img src="images/tuff.jpg" alt="me" style="max-width: 100%;">
+  </div>
+</div>
+
+<div id="spotify-player"
+     style="position: fixed; top: 780px; left: 20px; width: 320px; cursor: grab; z-index: 1050; user-select: none;
+            background: transparent; /* no white background */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+            border-radius: 12px; /* match iframe rounding */
+            overflow: hidden;">
+  <iframe
+    style="border-radius:12px; width: 100%; height: 152px; pointer-events: auto; display: block;"
+    src="https://open.spotify.com/embed/track/7hfOmN979NCWOujINDSAMo?utm_source=generator"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+  ></iframe>
+</div>
+
+  <audio id="click-sound" src="misc/click.mp3"></audio>
+  <script src="index.js"></script>
+</body>
+</html>

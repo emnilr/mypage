@@ -1,0 +1,112 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding-top: 70px;
+  font-family: Tahoma, Geneva, sans-serif;
+  background-image: url('images/windows_xp_bliss-wide.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000000;
+  position: relative;
+  cursor: url('misc/arrow.cur'), auto;
+}
+
+* {
+  cursor: url('misc/arrow.cur'), auto !important;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #007bff;
+}
+
+.home .navbar-brand {
+  color: #ff4081 !important;
+}
+
+.navbar a {
+  color: #007bff !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.win7-window {
+  width: 700px;
+  border: 1px solid #a0a0a0;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #ffffff;
+  position: absolute;
+  cursor: default;
+  user-select: none;
+  transition: box-shadow 0.15s ease;
+}
+
+@media (max-width: 992px) {
+  .win7-window {
+    position: relative !important;
+    width: 90% !important;
+    max-width: 700px !important;
+    margin: 1rem auto !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.2);
+    overflow: auto;
+  }
+}
+
+@media (min-width: 993px) {
+  body, html {
+    overflow: hidden;
+  }
+}
+.win7-titlebar {
+  background: linear-gradient(to bottom, #0072c6, #005a9e);
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #003f6b;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.win7-titlebar:active {
+  cursor: grabbing;
+}
+
+.win7-title {
+  user-select: none;
+}
+
+.win7-content {
+  padding: 20px;
+  user-select: text;
+}
+
+.win7-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.win7-window:hover {
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.nav-link.active {
+  color: #ff4081 !important;
+  font-weight: bold;
+}
